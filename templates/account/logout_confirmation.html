@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card mx-auto" style="max-width: 400px;">
+    <div class="card-body text-center">
+        <h5 class="card-title">Are you sure you want to sign out?</h5>
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger">Sign Out</button>
+            <a href="/dashboard/" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</div>
+{% endblock %}

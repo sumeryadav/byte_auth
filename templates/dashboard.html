@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Dashboard</h1>
+<p>Hi, {{ username }}!</p>
+<a href="/profile/" class="btn btn-primary">View Profile</a>
+<a href="{% url 'account_change_password' %}" class="btn btn-warning">Change Password</a>
+<a href="/accounts/logout/" class="btn btn-danger">Logout</a>
+{% endblock %}
